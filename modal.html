@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Window: pseudo + position </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--HW: why main ???
+    We use <main> for putting here uniqe information of our site,
+        this element not affects to other elements of our document-->
+    <main id="content">
+        <h1>Lorem ipsum dolor, sit.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, molestiae!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, distinctio vitae. Totam consequatur corrupti exercitationem blanditiis quod id? Omnis minima, assumenda culpa quis recusandae sequi natus fugit consectetur, eius beatae eum aperiam ex atque debitis? Unde, nobis necessitatibus sapiente voluptate provident vero exercitationem porro numquam adipisci fuga, laboriosam quisquam eum!</p>
+        <p>Nihil doloremque quam architecto minima, vitae laudantium, veritatis molestiae asperiores odit labore commodi? Architecto fugiat nobis earum iste ipsa explicabo iure quae veniam culpa perferendis saepe illo iusto totam eos nemo id, esse fugit, quia rerum deserunt! Laboriosam eaque accusantium, officiis eum corrupti, non illo perferendis, in consequatur distinctio maiores.</p>
+        <p>Dicta nobis earum nemo accusantium adipisci aspernatur hic? Mollitia, rerum non repellat quis incidunt in illo aperiam. Dignissimos nihil, molestias at rem recusandae repudiandae facilis veniam quod fugit saepe mollitia laborum non voluptatum beatae molestiae, voluptas explicabo excepturi consectetur nemo incidunt odit dolor ut, temporibus pariatur? Saepe, ipsum? Officia, aliquid!</p>
+
+        <p class="ad">
+        To benefit from it HIT THIS BUTTON  <a href="#modal">THIS BUTTON</a>
+        </p>
+
+
+    </main>
+
+    <div id="modal">
+        <!--HW2: is it correct to use another H1 ???
+        -It's not correct to use another H1 in this section, we should follow 
+        to hierarchy (to start from H2)-->
+
+        <h1>Apply for this product!</h1>
+        <h2>In order to apply fill in the blank</h2>
+
+        <form action="relative.html">
+            <!--HW:  add label to input
+            (select)prefixed(input phone)
+             +full name, phone must fill-->
+
+                <label>
+                <input required type="text" placeholder="fullname: e.g. John Doe"></br></label>
+
+            <label>
+                <select class="phone">
+                    <option>+373</option>
+                    <option>+401</option>
+                    <option>+390</option>
+                </select> 
+
+                <input 
+                required
+                type="text"
+                placeholder="phone: 69177155"
+                pattern="/d{8;10}"/>
+                </br></label>
+
+            <label>
+            <input requierd type="text"
+                   placeholder="email: john.something@example"
+                   pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"></br></label>
+              
+
+            <button>APPLY!</button>
+
+        </form>
+        <a href="#">X</a>
+
+
+    </div>
+    <div class="overlay"></div>
+    
+</body>
+</html>
